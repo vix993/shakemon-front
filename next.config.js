@@ -5,6 +5,9 @@ const nextConfig = {
       domains: ['raw.githubusercontent.com'],
       formats: ["image/webp"],
     },
+    experimental: {
+        outputStandalone: true,
+      },
   }
   
-  module.exports = nextConfig
+module.exports = nextConfig
