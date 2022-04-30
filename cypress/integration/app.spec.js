@@ -12,4 +12,13 @@ describe('App', () => {
   it('should render a header', () => {
     cy.get('[id=shakemon-header]').should('exist');
   })
+  it('should render the main display', () => {
+    cy.get('[id=shakemon-main-display-component]').should('exist');
+  })
+  it('should render a search filter', () => {
+    cy.get('[id=shakemon-search-filter-component]').should('exist');
+  })
+  it('should render a pokemon display', () => {
+    cy.get('[id=shakemon-pokemon-display-component]').should('exist');
+  })
 })
