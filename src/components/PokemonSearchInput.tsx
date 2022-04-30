@@ -30,7 +30,7 @@ export const PokemonSearchFilter: React.FC<PokemonSearchFilterProps> = ({}) => {
                     type="search"
                     name="q"
                     className="w-full py-2 text-sm bg-stone-300 rounded-md pl-10 focus:outline-none focus:shadow text-stone-800"
-                    placeholder="Search..."
+                    placeholder="Search a pokemon name..."
                     autoComplete='off'
                 />
                 </div>
