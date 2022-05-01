@@ -16,16 +16,14 @@ describe('App', () => {
     cy.get('[id=shakemon-main-display-component]').should('exist');
   })
   it('should render and use the search filter', () => {
-    const searchFilter = cy.get('[id=shakemon-search-filter-component]')
+    cy.get('[id=shakemon-search-filter-component]').should('exist')
+    const searchFilter = cy.get('[id=shakemon-search-filter]')
     searchFilter.should('exist');
     searchFilter
       .type('charizard')
       .should('have.value', 'charizard')
   })
-  // cy.get('.action-email')
-  // .type('fake@email.com')
-  // .should('have.value', 'fake@email.com')
-  it('should render a pokemon display', () => {
-    cy.get('[id=shakemon-pokemon-display-component]').should('exist');
+  it('should render a pokemon display after successful result', () => {
+    cy.get('[id=shakemon-pokemon-display-component]').should('not.exist');
   })
 })
