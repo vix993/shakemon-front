@@ -12,13 +12,13 @@
 
 ## Status
 
-![Tests](https://github.com/vix993/project-lifeline/actions/workflows/test.yml/badge.svg)  ![Health Check](https://github.com/vix993/project-lifeline/actions/workflows/health_check.yml/badge.svg)
+![Tests](https://github.com/vix993/shakemon-front/actions/workflows/e2e.js.yml/badge.svg)
 
 ## Description
 
 I was tasked with creating an app that would return a description of a pokemon in the style of William Shakespeare.
 
-The result of this prompt was [`Shakemon`](www.example.com).
+The result of this prompt was [`Shakemon`](https://shakemon.vercel.app/).
 
 This is a single page application that acesses the [`Shakemon API`](https://github.com/vix993/shakemon) and displays a Pokemon chosen by the user, along with a description translated to "Shakesperean language".
 
