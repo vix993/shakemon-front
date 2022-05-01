@@ -22,7 +22,7 @@ export const PokemonDisplay: React.FC<PokemonDisplayProps> = ({ pokemon }) => {
                     ></img>
                 </section>
                 <section className='sm:px-4'>
-                    <h4 className='text-stone-50 sm:text-2xl text-center'>
+                    <h4 className='text-stone-50 sm:text-2xl text-center font-normal'>
                         { pokemon.description }
                     </h4>
                 </section>
