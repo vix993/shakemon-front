@@ -5,10 +5,9 @@
 
 1. [Description](#Motivation) 
 2. [Requirements](#Requirements)
-3. [API](#API)
-    - [Pokémon](#Pokémon)
-    - [HealthCheck](#HealthCheck)
-4. [Additional Notes](#API)
+3. [ScreenStates](#API)
+    - [HomePage](#Pokémon)
+    - [SearchResult](#HealthCheck)
 
 ## Status
 
@@ -22,7 +21,7 @@ The result of this prompt was [`Shakemon`](https://shakemon.vercel.app/).
 
 This is a single page application that acesses the [`Shakemon API`](https://github.com/vix993/shakemon) and displays a Pokemon chosen by the user, along with a description translated to "Shakesperean language".
 
-The repository containing the back end for this app can be acessed here: https://github.com/vix993/shakemon
+*You will need to run the backend* in order to use this tool. The repository containing the back end for this app can be acessed here: https://github.com/vix993/shakemon
 
 You can run it with the following commands: 
 - `docker build -t shakemon .`
@@ -36,30 +35,22 @@ Without docker:
 
 ## Requirements
 
-Go or docker.
+Node,js or Docker.
 
-## Api
-## *Pokémon*
+## ScreenStates
+## *HomePage*
 
-#### GET
-Get the Shakespearean description of a pokémon.
-#### Endpoint
-`GET /pokemon/{name}`
-#### Response parameter
-##### 200
-`{
-    "name": "charizard",
-    "description": "Charizard is a very stout fire type pokemon. 't is number 6 in the pokedex and hath an average weight of 905. 't is a valorous reinforcement to thy team and is able to learneth attacks like bodkins-dance,  scary-visage and facade. Thy opponents wilt beest regretting facing off with thee. Thee hath't to catcheth those folk all!",
-    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"
-}`
-## *HealthCheck*
+### /
+Before a search is executed.
+### Screenshots
+<img src="./presentation/homepage-mobile.png" />
+<img src="./presentation/homepage-web.png" />
 
-#### GET
-Get server status.
-#### Endpoint
-`GET /health-check`
-#### Response parameter
-##### 200
-`{
-    "message": "server is running",
-}`
+## *SearchResult*
+
+### /
+After executing a successful search.
+### Screenshots
+<img src="./presentation/searchresult-mobile.png" />
+<img src="./presentation/searchresult-web.png" />
+

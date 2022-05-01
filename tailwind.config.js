@@ -7,6 +7,9 @@ module.exports = {
         'inter': ['Inter', 'sans-serif'],
         'lexend': ['Lexend', 'sans-serif'],
       },
+      screens: {
+        'xsm': '450px'
+      }
     },
   },
   variants: {

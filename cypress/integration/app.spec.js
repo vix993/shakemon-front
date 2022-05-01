@@ -23,6 +23,10 @@ describe('App', () => {
       .type('charizard')
       .should('have.value', 'charizard')
   })
+  
+  it('should render a pokemon display after successful result', () => {
+    cy.get('[id="shakemon-start-screen-logo-component"]').should('exist');
+  })
   it('should render a pokemon display after successful result', () => {
     cy.get('[id=shakemon-pokemon-display-component]').should('not.exist');
   })

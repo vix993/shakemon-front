@@ -22,7 +22,7 @@ export const ShakemonProvider = ({ children }: ShakemonProviderProps) => {
     const [pokemon, setPokemon] = useState<Pokemon>();
     const [searchInput, setSearchInput] = useState("");
 
-    // fetching blog posts data
+    // fetching pokemon data
     const requestPokemon = (searchInput: string) => {
         setIsLoading(true);
 
@@ -30,15 +30,16 @@ export const ShakemonProvider = ({ children }: ShakemonProviderProps) => {
             .then((res) => {
                 if (res.data) {
                     setPokemon(res.data);
-                    console.log(pokemon)
                 }
                 setIsLoading(false)
             })
             .catch((err: any) => {
-                console.log(err);
                 setIsLoading(false);
-                
-                toast.error(err.response.data.message);
+                if (err.response && err.response.data) {
+                    toast.error(err.response.data.message);
+                } else {
+                    toast.error(err.message)
+                }
             });
     }
 

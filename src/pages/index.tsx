@@ -5,12 +5,12 @@ import { ShakemonProvider } from '../context/ShakemonContext'
 export default function Home() {
   return (
     <main className='w-screen'>
-      <Header></Header>
-      <section>
-        <ShakemonProvider>
-          <MainDisplay />
-        </ShakemonProvider>
-      </section>
+      <ShakemonProvider>
+        <Header></Header>
+        <section>
+            <MainDisplay />
+        </section>
+      </ShakemonProvider>
     </main>
   )
 }
