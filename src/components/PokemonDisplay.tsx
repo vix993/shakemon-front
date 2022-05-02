@@ -11,7 +11,7 @@ export const PokemonDisplay: React.FC<PokemonDisplayProps> = ({ pokemon }) => {
     return (
         <main className='w-full pt-2 px-8 py-4 max-w-4xl' id="shakemon-pokemon-display-component">
             <div className='bg-red-400 rounded-2xl w-full h-full flex flex-col gap-3 p-4'>
-                <section className=' h-40 w-auto rounded-full bg-stone-50 flex flex-col sm:flex-row justify-center items-center py-2 px-6'>
+                <section className='h-40 w-auto rounded-full bg-stone-50 flex flex-col sm:flex-row justify-center items-center py-2 px-6'>
                     <h1 className='text-stone-700 text-2xl sm:text-7xl'>
                         {capitalize(pokemon.name)}
                     </h1>
