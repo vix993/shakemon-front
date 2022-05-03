@@ -4,12 +4,6 @@ import { ShakemonContextData } from '../models/ShakemonContextData';
 import { getPokemon } from '../repository/getShakemonRepository';
 
 import { toast } from 'react-toastify';
-import { AxiosError } from 'axios';
-
-// import { getBlogPosts } from '../repositories/blogPostsRepository';
-
-// import { BlogPost } from '../models/BlogPost';
-// import { BlogPostsContextData } from '../models/BlogPostsContextData';
 
 export interface ShakemonProviderProps {
     children: ReactNode;
