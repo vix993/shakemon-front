@@ -2,7 +2,7 @@ version: '2'
 
 services:
   shakemon-front:
-    image: vicbirth/shakemon:0.0.1
+    image: vicbirth/shakemon
     build: .
     ports:
       - "3000:3000"
