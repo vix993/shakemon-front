@@ -23,6 +23,10 @@ This is a single page application that acesses the [`Shakemon API`](https://gith
 
 *You will need to run the backend* in order to use this tool. The repository containing the back end for this app can be acessed here: https://github.com/vix993/shakemon
 
+The integration tests are in cypress/integration/app.spec.js and can be run like so:
+- `yarn run e2e:headless`
+- alternatively you can read the [ci logs](https://github.com/vix993/shakemon-front/actions) for the output.
+
 You can run the frontend:
 - `git clone git@github.com:vix993/shakemon-front.git`
 - `cd shakemon-front`
