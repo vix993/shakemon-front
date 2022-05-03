@@ -23,15 +23,19 @@ This is a single page application that acesses the [`Shakemon API`](https://gith
 
 *You will need to run the backend* in order to use this tool. The repository containing the back end for this app can be acessed here: https://github.com/vix993/shakemon
 
-You can run the frontend: 
+You can run the frontend:
+- `git clone git@github.com:vix993/shakemon-front.git`
+- `cd shakemon-front`
 - `docker build -t shakemon_front .`
 - `docker run -p 3000:3000 shakemon_front`
 
-Then the frontend:
+Then the backend:
 - `git clone git@github.com:vix993/shakemon.git ../shakemon-api`
 - `cd ../shakemon-api`
 - `docker build -t shakemon_api .`
 - `docker run -p 3000:3000 shakemon_api`
+- `docker build -f Dockerfile.nginx -t cors .`
+- `docker run cors`
 
 Without docker:
 - install [`node.js`](https://nodejs.org/en/download/)
