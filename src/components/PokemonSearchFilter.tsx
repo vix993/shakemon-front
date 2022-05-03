@@ -55,7 +55,7 @@ export const PokemonSearchFilter: React.FC<PokemonSearchFilterProps> = ({}) => {
                         onKeyDown={(e) => {handleEnter(e)}}
                         type="search"
                         name="q"
-                        className="w-full py-2 text-sm bg-stone-300 rounded-md pl-10 focus:outline-none focus:shadow text-stone-800"
+                        className="w-full py-2 text-sm bg-stone-300 rounded-md pl-10 focus:shadow text-stone-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-stone-300 focus:ring-stone-500 disabled:opacity-50 disabled:hover:bg-stone-300"
                         placeholder="Search pokemon name..."
                         autoComplete='off'
                         id="shakemon-search-filter"
