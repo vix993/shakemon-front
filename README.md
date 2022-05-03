@@ -33,7 +33,7 @@ Then the backend:
 - `git clone git@github.com:vix993/shakemon.git ../shakemon-api`
 - `cd ../shakemon-api`
 - `docker build -t shakemon_api .`
-- `docker run -p 3000:3000 shakemon_api`
+- `docker run -p 8080:8080 shakemon_api`
 - `docker build -f Dockerfile.nginx -t cors .`
 - `docker run cors`
 
