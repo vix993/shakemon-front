@@ -34,6 +34,7 @@ export const PokemonSearchFilter: React.FC<PokemonSearchFilterProps> = ({}) => {
                     <span className="absolute inset-y-0 left-0 flex items-center pl-2">
                         <button
                             type="submit"
+                            aria-label='Execute Pokemon Search'
                             className="p-1 focus:outline-none focus:shadow-outline"
                             onSubmit={(e) => {handleSubmit(e)}}
                             onClick={(e) => {handleSubmit(e)}}

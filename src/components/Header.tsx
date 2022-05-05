@@ -12,7 +12,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
         
                 {pokemon && (
                     <span className='max-h-12 flex gap-2 content-center justify-center flex-row'>
-                        <Image src="/pokeball.svg" height={30} width={30} layout="intrinsic" objectFit='contain'></Image>    
+                        <Image src="/pokeball.svg" alt='Pokeball Icon' height={30} width={30} layout="intrinsic" objectFit='contain'></Image>    
                         <h1 className='text-stone-100 '>Shakémon</h1>
                     </span>
                 )}
